@@ -1,0 +1,13 @@
+
+.defibrilators li:hover {
+  cursor: pointer;
+  color: gray;
+}
+.defibrilators li.selected {
+  background-color: gray;
+  color: white;
+}
+.defibrilators li.selected:hover {
+  background-color: lightgray;
+  color: white;
+}
