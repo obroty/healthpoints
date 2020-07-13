@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import generics
 
-# Create your views here.
+from spot.models import Spot
+from .serializers import SpotSerializer
+
+class SpotApiView(generics.ListAPIView):
+    queryset = Spot.objects.all()
+    serializer_class = SpotSerializer
