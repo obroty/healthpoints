@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
+
 import { DefibInterface } from './defib-interface';
 import { DEFIBS } from './mock-defibs';
 
@@ -8,7 +10,7 @@ import { DEFIBS } from './mock-defibs';
 export class DefibrilatorService {
   constructor() { }
 
-  getHeroes(): DefibInterface[] {
-    return DEFIBS;
+  getDefibrilators(): Observable<DefibInterface[]> {
+    return of(DEFIBS);
   }
 }
