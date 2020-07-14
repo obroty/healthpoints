@@ -1,12 +1,4 @@
-<h1>Defibrilators</h1>
-
-<ul class="defibrilators">
-  <li *ngFor="let def of defib_list"
-    [class.selected]="def === selectedDefib"
-    (click)="onSelect(def)">
-    {{def.name}}
-  </li>
-</ul>
+<h2>Defibrilators AED in Szczecin</h2>
 
 <div *ngIf="selectedDefib">
   <h2>Details:</h2>
@@ -16,3 +8,11 @@
   <div><span><strong>Latitude: </strong></span>{{selectedDefib.latitude}}</div>
   <div><span><strong>Longitude: </strong></span>{{selectedDefib.longitude}}</div>
 </div>
+
+<ul class="defibrilators">
+  <li *ngFor="let def of defib_list"
+    [class.selected]="def === selectedDefib"
+    (click)="onSelect(def)">
+    {{def.name}}
+  </li>
+</ul>
