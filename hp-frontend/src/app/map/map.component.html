@@ -1,0 +1,10 @@
+<agm-map [zoom]="zoom" [latitude]="latHome" [longitude]="lngHome">
+    <div *ngFor="let def of defibrilators_list">
+      <agm-marker [latitude]="def.latitude" [longitude]="def.longitude">
+          <agm-info-window>
+            <h2>{{def.name}}</h2>
+            <h3>{{def.address}},{{def.city}}</h3>
+          </agm-info-window>
+      </agm-marker>
+    </div>
+</agm-map>
