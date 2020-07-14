@@ -8,7 +8,7 @@ import { DefibInterface } from '../defib-interface';
 })
 export class DefibrilatorDetailComponent implements OnInit {
 
-  @Input() defibrilator: DefibInterface;
+  @Input() clicked_defibrilator: DefibInterface;
 
   constructor() { }
   ngOnInit(): void {

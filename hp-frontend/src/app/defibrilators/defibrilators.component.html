@@ -1,11 +1,17 @@
-<app-map [defibrilator]="selectedDefib" [defibrilators_list] = defib_list></app-map>
+<div class="">
+  <div class="split right">
+    <app-map [clicked_defibrilator]="selectedDefib" [defibrilators_list] = defib_list></app-map>
+  <div>
 
-<app-defibrilator-detail [defibrilator]="selectedDefib"></app-defibrilator-detail>
+  <div class="split left">
+    <app-defibrilator-detail [clicked_defibrilator]="selectedDefib"></app-defibrilator-detail>
 
-<ul class="defibrilators">
-  <li *ngFor="let def of defib_list"
-    [class.selected]="def === selectedDefib"
-    (click)="onSelect(def)">
-    {{def.name}}
-  </li>
-</ul>
+    <ul class="defibrilators">
+      <li *ngFor="let def of defib_list"
+        [class.selected]="def === selectedDefib"
+        (click)="onSelect(def)">
+        {{def.name}}
+      </li>
+    </ul>
+  </div>
+</div>

@@ -8,7 +8,7 @@ import { DefibInterface } from '../defib-interface';
 })
 export class MapComponent implements OnInit {
 
-  @Input() defibrilator: DefibInterface;
+  @Input() clicked_defibrilator: DefibInterface;
   @Input() defibrilators_list: DefibInterface[];
 
   latHome: number = 53.4296962;

@@ -1,4 +1,13 @@
 <agm-map [zoom]="zoom" [latitude]="latHome" [longitude]="lngHome">
+  <div *ngIf="clicked_defibrilator; else elseBlock">
+    <agm-marker [latitude]="clicked_defibrilator.latitude" [longitude]="clicked_defibrilator.longitude">
+        <agm-info-window>
+          <h2>{{clicked_defibrilator.name}}</h2>
+          <h3>{{clicked_defibrilator.address}},{{clicked_defibrilator.city}}</h3>
+        </agm-info-window>
+    </agm-marker>
+  </div>
+  <ng-template #elseBlock>
     <div *ngFor="let def of defibrilators_list">
       <agm-marker [latitude]="def.latitude" [longitude]="def.longitude">
           <agm-info-window>
@@ -7,4 +16,5 @@
           </agm-info-window>
       </agm-marker>
     </div>
+  </ng-template>
 </agm-map>
