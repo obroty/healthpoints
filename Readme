@@ -7,6 +7,8 @@ Healthpoints project is a app which has two parts:
 
 2. Frontend side named hp-frontend - its a web service which consumes data from server side api and shows a list of defibrilators and utilize google map api to present locations of defibrilators in Szczecin
   local url: http://localhost:4200/defibrilators
+  
+  google api key will be available until 16.07.2020 13.00 polish time.
 
 Defibrilators data downloaded from:
 http://wopr.szczecin.pl/zachodniopomorska-siec-defibrylatorow-aed/
