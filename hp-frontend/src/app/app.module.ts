@@ -24,7 +24,7 @@ import { DefibrilatorDetailComponent } from './defibrilator-detail/defibrilator-
     HttpClientModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-  apiKey: 'AIzaSyDq_DPNfIw7KNWrSfwHwP-hgiTCwa_cS8Y'
+  apiKey: 'AIzaSyC_14PhB8nYt-Oq96VEoL3x9W7nS0dCyVg'
 })
   ],
   providers: [],
